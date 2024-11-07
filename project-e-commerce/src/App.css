@@ -1,6 +1,17 @@
+
+:root{
+  --cor0: #56C033;
+  --cor1: #569641;
+  --cor2: #4EEA18;
+  --cor3: #4B6B40;
+  --cor4: #354132;
+  --cor5: #2E332C;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 *{
