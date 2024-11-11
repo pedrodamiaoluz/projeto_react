@@ -96,3 +96,10 @@ export const CardButton = styled.div`
     background: teal;
   }
   `;
+
+  export const ContainerCards = styled.div`
+   .card {
+    display: flex;
+    flex-wrap: wrap;
+   }
+  `

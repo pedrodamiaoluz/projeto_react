@@ -9,7 +9,7 @@ import Image1 from "../../../assets/react.svg";
 import { useState } from 'react';
 
 
-export default function Card(props) {
+export default function Cards(props) {
 
     const [quantidade, setQuantidade] = useState();
 
@@ -23,7 +23,7 @@ export default function Card(props) {
                 <h1 className="titulo">Alimentos Integrais</h1>
             </S.Titulo> */}
             <S.Card>
-                <CardImg src={Image1} />
+                <img src={props.src} />
                 <CardBody>
                     <S.CardTitle>{props.titulo}</S.CardTitle>
                     <S.CardInput>

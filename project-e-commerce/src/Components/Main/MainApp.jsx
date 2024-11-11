@@ -1,4 +1,5 @@
-import AlimentosIntegrais from "./Cards";
+import AlimentosIntegrais from "./AlimentosIntegrais/Integrais";
+
 
 export default function MainApp() {
 
