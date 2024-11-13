@@ -1,12 +1,9 @@
 import React from "react";
-import * as S from "../AlimentosIntegrais/style";
+import * as S from "./style";
 import Cards from "../Cards/Cards";
-import imagem1 from "../../../assets/react.svg";
-// import imagem2 from "../../../assets/v-mark-vegan-logo-5.png";
+import imagem1 from "../../../../assets/v-mark-vegan-logo-5.png";
 
 function AlimentosIntegrais() {
-
-
     return (
         <>
             <S.Titulo>
@@ -41,4 +38,4 @@ function AlimentosIntegrais() {
     )
 }
 
-export default AlimentosIntegrais;
+export default AlimentosIntegrais

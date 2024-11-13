@@ -5,11 +5,10 @@ import {
     Button
 } from "shards-react";
 import * as S from "../AlimentosIntegrais/style";
-import Image1 from "../../../assets/react.svg";
 import { useState } from 'react';
 
 
-export default function Cards(props) {
+function Cards(props) {
 
     const [quantidade, setQuantidade] = useState();
 
@@ -19,9 +18,6 @@ export default function Cards(props) {
 
     return (
         <>
-            {/* <S.Titulo>
-                <h1 className="titulo">Alimentos Integrais</h1>
-            </S.Titulo> */}
             <S.Card>
                 <img src={props.src} />
                 <CardBody>
@@ -51,3 +47,5 @@ export default function Cards(props) {
         </>
     )
 }
+
+export default Cards
