@@ -68,6 +68,7 @@ export const Container_Icons = styled.div`
    a{
       text-decoration: none;
       color: #000;
+      cursor: pointer;
    }
 `
 

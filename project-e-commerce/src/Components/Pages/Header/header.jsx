@@ -5,35 +5,28 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import NavBar from "./NavBar";
+import { useNavigate } from "react-router-dom";
 
+function Header() {
 
+    const navigate = useNavigate()
 
-
-export default function Header() {
+    function EntraLogin() {
+        navigate("/login");
+    }
     return (
         <S.Container>
             <div class="header__logo">
                 <S.Image src={logo} alt="" />
             </div>
-   
-                {/* <S.Ul>
-                    <S.Li><S.A href="./index.html">Home</S.A></S.Li>
-                    <S.Li><S.A href="./ComprePorCategoria/catogoria0.html">Compre Por Categoria</S.A></S.Li>
-                    <S.Li><S.A href="../../../Components/Pages/Main/SobreNos/SobreNos">Sobre Nos</S.A></S.Li>
-                    <S.Li><S.A href="./ContateNos/contatenos.html">Contate-nos</S.A></S.Li>
-                </S.Ul> */}
-
-                <NavBar />
-            
+            <NavBar />
             <S.Container_Input>
                 <S.Inputs>
                     <S.Input type="text" placeholder="Pesquise produto, marcas, etc..." />
                     <AiOutlineSearch />
                 </S.Inputs>
                 <S.Container_Icons>
-                    <a href="./Login/login.html">
-                        <IoMdPerson />
-                    </a>
+                    <a onClick={EntraLogin}><IoMdPerson /></a>
                     <a href="./Carrinho/adicionarcarrino.html">
                         <IoCartOutline />
                     </a>
@@ -44,3 +37,5 @@ export default function Header() {
 
     )
 }
+
+export default Header

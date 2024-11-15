@@ -5,6 +5,10 @@ import App from './App.jsx'
 import SobreNos from './Components/Pages/Main/SobreNos/SobreNos.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contatenos from './Components/Pages/Main/Contatenos/Contatenos.jsx'
+import Login from './Components/Pages/Main/Login/Login.jsx'
+import EsqueceuSenha from './Components/Pages/Main/Login/esqueceusenha.jsx'
+import Cadastrese from './Components/Pages/Main/Login/cadastrese.jsx'
+import NovaSenha from './Components/Pages/Main/Login/novasenha.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +26,22 @@ const router = createBrowserRouter([
   {
     path: "/contatenos",
     element: <Contatenos />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/esqueceusenha",
+    element: <EsqueceuSenha />,
+  },
+  {
+    path: "/cadastrese",
+    element: <Cadastrese />,
+  },
+  {
+    path: "/novasenha",
+    element: <NovaSenha />,
   },
 ]);
 
