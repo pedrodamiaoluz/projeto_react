@@ -5,7 +5,7 @@ export const Titulo = styled.h1`
       color: #000;
       font-size: 1.8rem;
       font-weight: 700;
-      margin: 2rem 1rem;
+      margin: 2rem 1rem 0 1rem;
    }
 `;
 
@@ -20,20 +20,20 @@ export const Card = styled.div`
     flex-direction: column;
 `;
 
-export const CardTitle = styled.div`
+export const CardTitles = styled.div`
    text-align: center;
    padding: 0.5rem 0;
 `
 
-export const CardInput = styled.div`
+export const CardInputs = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 `
 
-export const CardButton = styled.div`
-  .button {
+export const Buttons = styled.div`
+  .buttons {
     all: unset;
     display: flex;
     align-items: center;
@@ -50,19 +50,21 @@ export const CardButton = styled.div`
     transition: border 300ms, color 300ms;
     user-select: none;
   }
-  .button p {
+  .buttons p {
     z-index: 1;
+    font-size: 0.8em;
+    
   }
 
-  .button:hover {
+  .buttons:hover {
     color: #212121;
   }
 
-  .button:active {
+  .buttons:active {
     border-color: teal;
   }
 
-  .button::after, .button::before {
+  .buttons::after, .buttons::before {
     content: "";
     position: absolute;
     width: 9em;
@@ -73,33 +75,64 @@ export const CardButton = styled.div`
     transition: transform 500ms, background 300ms;
   }
 
-  .button::before {
+  .buttons::before {
     left: 0;
     transform: translateX(-8em);
   }
 
-  .button::after {
+  .buttons::after {
     right: 0;
     transform: translateX(8em);
   }
 
-  .button:hover:before {
+  .buttons:hover:before {
     transform: translateX(-1em);
   }
 
-  .button:hover:after {
+  .buttons:hover:after {
     transform: translateX(1em);
   }
 
-  .button:active:before,
-  .button:active:after {
+  .buttons:active:before,
+  .buttons:active:after {
     background: teal;
   }
   `;
 
-  export const ContainerCards = styled.div`
+export const ContainerCards = styled.div`
    .card {
     display: flex;
     flex-wrap: wrap;
    }
   `
+
+export const ContainerTornarVegano = styled.div`
+  .tornar__vegano_container{
+    background-color: #fff;
+    width: 950px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img{
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+.tornar__veg-conteudo{
+  width: 500px;
+}
+
+.tornar__veg-conteudo h1{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.tornar__veg-conteudo p{
+    padding: 1rem 0;
+    text-align: justify;
+}
+`

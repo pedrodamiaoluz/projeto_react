@@ -1,14 +1,16 @@
 
 import './App.css'
 import Header from './Components/Pages/Header/header'
-
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import MainApp from './Components/Pages/Main/MainApp'
+import Footer from './Components/Pages/Main/Footer/Footer'
 
 export default function App() {
 
     return (
         <>
-            <Header />   
+            <Header />
+            <MainApp />
+            <Footer />
         </>
     )
 }

@@ -4,7 +4,10 @@ import logo from "../../../assets/v-mark-vegan-logo-5.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
+
+
+
 
 export default function Header() {
     return (
@@ -12,23 +15,16 @@ export default function Header() {
             <div class="header__logo">
                 <S.Image src={logo} alt="" />
             </div>
-
-            {/* <nav>
-                <S.Ul>
+   
+                {/* <S.Ul>
                     <S.Li><S.A href="./index.html">Home</S.A></S.Li>
                     <S.Li><S.A href="./ComprePorCategoria/catogoria0.html">Compre Por Categoria</S.A></S.Li>
-                    <S.Li><S.A href="./SobreNos/sobrenos.html">Sobre Nos</S.A></S.Li>
+                    <S.Li><S.A href="../../../Components/Pages/Main/SobreNos/SobreNos">Sobre Nos</S.A></S.Li>
                     <S.Li><S.A href="./ContateNos/contatenos.html">Contate-nos</S.A></S.Li>
-                </S.Ul>
-            </nav> */}
+                </S.Ul> */}
 
-            <div>
-                <Link>Home</Link>
-                <Link>Compre Por Categoria</Link>
-                <Link>Sobre Nos</Link>
-                <Link>Contate-nos</Link>
-            </div>
--
+                <NavBar />
+            
             <S.Container_Input>
                 <S.Inputs>
                     <S.Input type="text" placeholder="Pesquise produto, marcas, etc..." />

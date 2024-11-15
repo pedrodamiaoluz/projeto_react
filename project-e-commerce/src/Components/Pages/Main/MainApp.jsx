@@ -1,11 +1,13 @@
-import AlimentosIntegrais from "./AlimentosIntegrais/Integrais"
+
+import Home from "./Home/Integrais"
+
 
 
 function MainApp() {
 
     return (
         <>
-            <AlimentosIntegrais />
+            <Home />
         </>
     )
 }

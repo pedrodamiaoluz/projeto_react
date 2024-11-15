@@ -71,3 +71,21 @@ export const Container_Icons = styled.div`
    }
 `
 
+export const Navagate = styled.div`
+ul{
+   display: inline-block;
+   list-style-type: none;
+}
+
+li{
+   display: inline-block;
+    padding: 0.5rem;
+}
+
+a{
+   text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+`
