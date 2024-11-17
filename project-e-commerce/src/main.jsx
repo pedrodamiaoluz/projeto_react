@@ -9,6 +9,7 @@ import Login from './Components/Pages/Main/Login/Login.jsx'
 import EsqueceuSenha from './Components/Pages/Main/Login/esqueceusenha.jsx'
 import Cadastrese from './Components/Pages/Main/Login/cadastrese.jsx'
 import NovaSenha from './Components/Pages/Main/Login/novasenha.jsx'
+import Carrinho from './Components/Pages/Main/Carrinho/adicionarcarrinho.jsx'
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/novasenha",
     element: <NovaSenha />,
+  },
+  {
+    path: "/carrinho",
+    element: <Carrinho />,
   },
 ]);
 

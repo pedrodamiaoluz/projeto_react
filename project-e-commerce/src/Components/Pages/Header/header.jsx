@@ -14,6 +14,11 @@ function Header() {
     function EntraLogin() {
         navigate("/login");
     }
+
+    function EntraCarrinho(){
+        navigate("/carrinho")
+    }
+
     return (
         <S.Container>
             <div class="header__logo">
@@ -27,9 +32,7 @@ function Header() {
                 </S.Inputs>
                 <S.Container_Icons>
                     <a onClick={EntraLogin}><IoMdPerson /></a>
-                    <a href="./Carrinho/adicionarcarrino.html">
-                        <IoCartOutline />
-                    </a>
+                    <a onClick={EntraCarrinho}><IoCartOutline /></a>
                 </S.Container_Icons>
             </S.Container_Input>
 
