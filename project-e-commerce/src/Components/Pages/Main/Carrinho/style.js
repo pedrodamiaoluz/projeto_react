@@ -77,6 +77,7 @@ header > .carrinho__container{
     text-decoration: none;
     color: #000;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -254,6 +255,7 @@ header > .carrinho__container{
 .form__buutton{
     display: flex;
     justify-content: end;
+    padding: 0 1rem;
 }
 
 .form__buutton a{

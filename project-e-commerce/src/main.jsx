@@ -10,6 +10,8 @@ import EsqueceuSenha from './Components/Pages/Main/Login/esqueceusenha.jsx'
 import Cadastrese from './Components/Pages/Main/Login/cadastrese.jsx'
 import NovaSenha from './Components/Pages/Main/Login/novasenha.jsx'
 import Carrinho from './Components/Pages/Main/Carrinho/adicionarcarrinho.jsx'
+import Identificacao from './Components/Pages/Main/Carrinho/identificacao.jsx'
+import Pagamento from './Components/Pages/Main/Carrinho/pagamento.jsx'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
   {
     path: "/carrinho",
     element: <Carrinho />,
+  },
+  {
+    path: "/identificacao",
+    element: <Identificacao />,
+  },
+  {
+    path: "/pagamento",
+    element: <Pagamento />,
   },
 ]);
 
