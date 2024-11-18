@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Select = styled.select`
+   background-color: transparent;
+   border: none;
+   color: black;
+    font-size: 1rem;
+    font-weight: bold;
+   
+`
+
+
 export const Container = styled.div`
   display: flex;
   align-items: center;

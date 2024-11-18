@@ -27,6 +27,7 @@ export const CardTitles = styled.div`
 
 export const CardInputs = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;

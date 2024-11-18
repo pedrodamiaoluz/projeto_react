@@ -12,6 +12,7 @@ import NovaSenha from './Components/Pages/Main/Login/novasenha.jsx'
 import Carrinho from './Components/Pages/Main/Carrinho/adicionarcarrinho.jsx'
 import Identificacao from './Components/Pages/Main/Carrinho/identificacao.jsx'
 import Pagamento from './Components/Pages/Main/Carrinho/pagamento.jsx'
+import AltaProteina from './Components/Pages/ComprePorCategoria/altaproteina.jsx'
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/pagamento",
     element: <Pagamento />,
+  },
+  {
+    path: "/altaproteina",
+    element: <AltaProteina />,
   },
 ]);
 
