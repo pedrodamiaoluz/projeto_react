@@ -4,6 +4,13 @@ import * as S from "./style"
 import imgaltaproteina from "../../../assets/imagem/img-categorias/AltaProteina.jpg"
 import imgbaixoteor from "../../../assets/imagem/img-categorias/baixo-teor-de-sodio.jpg"
 import imgnaocluten from "../../../assets/imagem/img-categorias/nao-contem-cluten.jpg"
+import imgcarne from "../../../assets/imagem/img-categorias/carne-fruto-do-mar.jpg"
+import imgqueijo from "../../../assets/imagem/img-categorias/queijo.jpg"
+import imgchocolate from "../../../assets/imagem/img-categorias/chocolate.png"
+import imglanche from "../../../assets/imagem/img-categorias/lanche.jpg"
+import imganimal from "../../../assets/imagem/img-categorias/p-animal.jpg"
+import imgpanificacao from "../../../assets/imagem/img-categorias/p-panificacao.jpg"
+import imgfundamentos from "../../../assets/imagem/img-categorias/dispensa.jpg"
 
 function Categorias() {
 
@@ -11,6 +18,7 @@ function Categorias() {
 
     function EntraAltaProteina(){
         navigate("/altaproteina");
+        navigate("/lanche");
     }
     return (
         <>
@@ -27,7 +35,7 @@ function Categorias() {
                                 <a href="./CarneFrutosMar/carnefrutosmar.html">Carne e Frutos do Mar</a>
                                 <a href="./QueijoOvosLatcinios/queijoovoslaticinos.html">Queijo, Ovos e Laticínios</a>
                                 <a href="./ChocolateDoce/chocolatedoce.html">Chocolate, Doces e Doces</a>
-                                <a href="./Lanche/lanche.html">Lanches</a>
+                                <a onClick={EntraAltaProteina}>Lanches</a>
                                 <a href="./ProdutosAnimais/produtoanimaiscompanhia.html">Produtos para animais de companhia</a>
                                 <a href="./ProdutosPanificacao/produtospanificacao.html">Produtos de panificação</a>
                                 <a href="./FundamentosDespensa/fundamentodespensa.html">Fundamentos da despensa</a>
@@ -57,43 +65,43 @@ function Categorias() {
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Carne_Frutos_do_Mar.webp" alt="" />
+                                            <img src={imgcarne} alt="" />
                                             <span>Carne e Frutos do Mar</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Queijo_Ovos_Laticínios.avif" alt="" />
+                                            <img src={imgqueijo} alt="" />
                                             <span>Queijo, Ovos e Laticínios</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Chocolate_Doces_Doces.png" alt="" />
+                                            <img src={imgchocolate} alt="" />
                                             <span>Chocolate, Doces e Doces</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Lanche.jpg" alt="" />
+                                            <img src={imglanche} alt="" />
                                             <span>Lanches</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Produtos_para_animais_companhia.webp" alt="" />
+                                            <img src={imganimal} alt="" />
                                             <span>Produtos para animais de companhia</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Produtos_panificação.jpg" alt="" />
+                                            <img src={imgpanificacao} alt="" />
                                             <span>Produtos de panificação</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src="/pages/Imagem-das-Categoria/Fundamentos_despensas.png" alt="" />
+                                            <img src={imgfundamentos} alt="" />
                                             <span>Fundamentos da despensa</span>
                                         </a>
                                     </li>

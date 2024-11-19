@@ -164,7 +164,7 @@ export const ContainerComprePorCategoria = styled.div`
 .compre_produto-links details summary a{
     text-decoration: none;
     color: #2E332C;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 500;
     padding-left: 20px;
 }
@@ -176,8 +176,8 @@ export const ContainerComprePorCategoria = styled.div`
 
 .compre_produto-links details ul{
     list-style-type: none;
-    padding: 20px 0 5px 30px;
-    font-size: 15px;
+    padding: 0.2rem 0 0.1rem 1rem;
+    font-size: 0.8rem;
 }
 
 .compre_produto-links details ul li{
@@ -195,6 +195,11 @@ export const ContainerComprePorCategoria = styled.div`
 
 /*configuraça do leude compra meu produto*/
 
+.container_lanche-card__altaproteina{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .leaude_contaeiner{
     background-color: rgba(255, 136, 0, 0.733);
     padding: 20px 0;
@@ -209,8 +214,8 @@ export const ContainerComprePorCategoria = styled.div`
 }
 
 .leaude_img img{
-    width: 550px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     object-fit: cover;
 }
 
@@ -228,13 +233,14 @@ export const ContainerComprePorCategoria = styled.div`
 }
 
 .leaude_conteudo p{
-    width: 600px;
+    width: 500px;
     text-align: justify;
 }
 
 .leaude_conteudo span a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .compre__container{
@@ -252,6 +258,11 @@ export const ContainerComprePorCategoria = styled.div`
     align-items: center;
     justify-items: center;
 
+    h1{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+    }
 }
 
 .produtos_titulo span{
