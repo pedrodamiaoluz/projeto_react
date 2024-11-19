@@ -7,7 +7,7 @@ function NavBar() {
 
     function NavClick() {
         navigate("/home");
-        navigate("/altaproteina");
+        navigate("/categoria");
         navigate("/sobrenos");
         navigate("/contatenos");
     }
@@ -19,7 +19,7 @@ function NavBar() {
                     <a href="/home" onClick={NavClick}>Home</a>
                 </li>
                 <li>
-                    <a href="/altaproteina" onClick={NavClick}>Compre Por Categoria</a>            
+                    <a href="/categoria" onClick={NavClick}>Compre Por Categoria</a>            
                 </li>
                 <li>
                     <a href="/sobrenos" onClick={NavClick}>Sobre Nos</a>

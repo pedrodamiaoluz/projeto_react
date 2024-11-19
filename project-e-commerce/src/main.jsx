@@ -13,6 +13,7 @@ import Carrinho from './Components/Pages/Main/Carrinho/adicionarcarrinho.jsx'
 import Identificacao from './Components/Pages/Main/Carrinho/identificacao.jsx'
 import Pagamento from './Components/Pages/Main/Carrinho/pagamento.jsx'
 import AltaProteina from './Components/Pages/ComprePorCategoria/altaproteina.jsx'
+import Categorias from './Components/Pages/ComprePorCategoria/categoria.jsx'
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: "/altaproteina",
     element: <AltaProteina />,
+  },
+   {
+    path: "/categoria",
+    element: <Categorias />,
   },
 ]);
 

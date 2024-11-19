@@ -43,6 +43,7 @@ export const ContainerComprePorCategoria = styled.div`
     color: #2E332C;
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .categoria__links a:hover{
@@ -88,6 +89,7 @@ export const ContainerComprePorCategoria = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 
     span{
         padding: 0.7rem 0;
@@ -364,7 +366,7 @@ export const ContainerComprePorCategoria = styled.div`
     color: #000;
 
     h1{
-        font-size: 40px;
+        font-size: 1.7rem;
         font-weight: 400;
         margin: 20px 0;
         color: #2E332C;
@@ -389,6 +391,7 @@ export const ContainerComprePorCategoria = styled.div`
     text-decoration: none;
     color: #2E332C;
     transition: .3s;
+    cursor: pointer;
 }
 
 .leaude__categoria-conteudo span a:hover{
@@ -563,6 +566,12 @@ export const ContainerComprePorCategoria = styled.div`
     border-bottom:none;
     border-top: none;
     outline: none;
+}
+
+.container-card__altaproteina{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.7rem;
 }
 
 /*Configurações sobre os tipos de marcas*/
