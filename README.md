@@ -14,7 +14,7 @@ Para instalar as dependências do projeto, execute o seguinte comando:
 ## Uso
 Para iniciar o servidor de desenvolvimento, use o comando:
 - npm run dev
-
+- O aplicativo estará disponível em http://localhost:3000.
 ## Tecnologias Utilizadas
 - React
 - React Router
