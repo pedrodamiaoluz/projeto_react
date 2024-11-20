@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import Header from "../Header/header"
 import * as S from "./style"
+import Footer from "../Main/Footer/Footer"
 import imgaltaproteina from "../../../assets/imagem/img-categorias/AltaProteina.jpg"
 import imgbaixoteor from "../../../assets/imagem/img-categorias/baixo-teor-de-sodio.jpg"
 import imgnaocluten from "../../../assets/imagem/img-categorias/nao-contem-cluten.jpg"
@@ -18,6 +19,9 @@ function Categorias() {
 
     function EntraAltaProteina(){
         navigate("/altaproteina");
+    }
+
+    function EntraLanche(){
         navigate("/lanche");
     }
     return (
@@ -35,7 +39,7 @@ function Categorias() {
                                 <a href="./CarneFrutosMar/carnefrutosmar.html">Carne e Frutos do Mar</a>
                                 <a href="./QueijoOvosLatcinios/queijoovoslaticinos.html">Queijo, Ovos e Laticínios</a>
                                 <a href="./ChocolateDoce/chocolatedoce.html">Chocolate, Doces e Doces</a>
-                                <a onClick={EntraAltaProteina}>Lanches</a>
+                                <a onClick={EntraLanche}>Lanches</a>
                                 <a href="./ProdutosAnimais/produtoanimaiscompanhia.html">Produtos para animais de companhia</a>
                                 <a href="./ProdutosPanificacao/produtospanificacao.html">Produtos de panificação</a>
                                 <a href="./FundamentosDespensa/fundamentodespensa.html">Fundamentos da despensa</a>
@@ -112,6 +116,7 @@ function Categorias() {
 
                 </section>
             </S.ContainerComprePorCategoria>
+            <Footer />
         </>
     )
 }

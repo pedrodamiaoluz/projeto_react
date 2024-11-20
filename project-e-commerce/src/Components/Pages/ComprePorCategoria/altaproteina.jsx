@@ -1,6 +1,7 @@
 import Header from "../Header/header"
 import * as S from "./style"
 import * as Ss from "../Main/Home/style"
+import Footer from "../Main/Footer/Footer"
 import Cards from "../Main/Cards/Cards"
 import { useNavigate } from "react-router-dom"
 
@@ -295,6 +296,7 @@ function AltaProteina() {
                     </div>
                 </section>
             </S.ContainerComprePorCategoria>
+            <Footer />
         </>
     )
 }

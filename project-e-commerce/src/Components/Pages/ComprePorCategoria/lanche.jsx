@@ -1,6 +1,7 @@
 import Header from "../Header/header"
 import * as S from "./style"
 import * as Ss from "../Main/Home/style"
+import Footer from "../Main/Footer/Footer"
 import bainner from "../../../assets/imagem/img-lanche/bainner-lanche.png"
 import Cards from "../Main/Cards/Cards"
 import { SlArrowRight } from "react-icons/sl";
@@ -110,6 +111,7 @@ function Lanche() {
                </div>
             </section>
          </S.ContainerComprePorCategoria>
+         <Footer />
       </>
    )
 }
