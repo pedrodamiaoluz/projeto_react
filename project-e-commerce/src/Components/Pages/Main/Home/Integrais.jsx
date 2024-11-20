@@ -3,9 +3,11 @@ import * as S from "./style";
 import Cards from "../Cards/Cards";
 import imagem1 from "../../../../assets/react.svg";
 import imagem2 from "../../../../assets/imagem/mulher-home.jpg"
+import Swiper from "../../Swiper/swiper";
 function Home() {
     return (
         <>
+        <Swiper />
             <S.Titulo>
                 <h1 className="titulo">Alimentos Integrais</h1>
             </S.Titulo>
@@ -39,6 +41,7 @@ function Home() {
                     </div>
                 </div>
             </S.ContainerTornarVegano>
+
             
         </>
 
