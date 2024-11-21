@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Titulo = styled.h1`
    .titulo{
-      color: #000;
+      color: #354132;
       font-size: 1.8rem;
       font-weight: 700;
       margin: 2rem 1rem;
@@ -18,6 +18,13 @@ export const Card = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 200px;
+      height: 190px;
+      object-fit: cover;
+    }
 `;
 
 export const CardTitles = styled.div`
@@ -31,6 +38,7 @@ export const CardInputs = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 30px;
 `
 
 export const Buttons = styled.div`
@@ -53,7 +61,7 @@ export const Buttons = styled.div`
   }
   .buttons p {
     z-index: 1;
-    font-size: 0.8em;
+    font-size: 0.7em;
     
   }
 
@@ -130,6 +138,7 @@ export const ContainerTornarVegano = styled.div`
 .tornar__veg-conteudo h1{
   font-size: 1.8rem;
   font-weight: 700;
+  color: #354132;
 }
 
 .tornar__veg-conteudo p{

@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "../Home/style";
 import { useState } from 'react';
+import { FaCartPlus } from "react-icons/fa";
 
 
 function Cards(props) {
@@ -34,7 +35,7 @@ function Cards(props) {
                     </S.CardInputs>
                     <S.Buttons>
                         <button className="buttons">
-                            <p>Adicionar</p>
+                            <p>Adicionar <FaCartPlus /></p>
                         </button>
                     </S.Buttons>
             </S.Card>

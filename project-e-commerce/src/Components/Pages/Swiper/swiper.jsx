@@ -15,6 +15,9 @@ import { ArraySlide } from '../../../assets/imagem/img-categorias/Img-categoria'
 export default () => {
    return (
       <S.ContainerSwiper>
+         <div class="titulo-swiper">
+            <h1>Compre por categoria</h1>
+         </div>
          <Swiper className="Swiper"
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -26,6 +29,7 @@ export default () => {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
          >
+
             {ArraySlide.map((item) => {
                return (
                   <SwiperSlide>

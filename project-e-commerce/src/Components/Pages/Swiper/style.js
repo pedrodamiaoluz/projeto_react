@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 export const ContainerSwiper = styled.div`
   .Swiper{
-    margin: 2rem 1rem;
+    margin: 0 1rem;
     padding: 2rem 0;
     
   }
+
+  .titulo-swiper{
+      color: #354132;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin: 3rem 1rem 0 1rem;
+  }
+
   .swiper-container{
     background-color: transparent;
     width: 170px;

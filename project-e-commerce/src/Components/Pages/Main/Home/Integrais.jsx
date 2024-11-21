@@ -4,31 +4,24 @@ import Cards from "../Cards/Cards";
 import imagem1 from "../../../../assets/react.svg";
 import imagem2 from "../../../../assets/imagem/mulher-home.jpg"
 import Swiper from "../../Swiper/swiper";
+import { ArrayCard } from "../../../../assets/imagem/img-lanche/arry-img";
 function Home() {
     return (
         <>
-        <Swiper />
+            <Swiper />
             <S.Titulo>
                 <h1 className="titulo">Alimentos Integrais</h1>
             </S.Titulo>
             <S.ContainerCards>
                 <div className="card">
-                    <Cards
-                        src={imagem1}
-                        titulo="Pedro"
-                    />
-                    <Cards
-                        src={imagem1}
-                        titulo="Alex"
-                    />
-                    <Cards
-                        src={imagem1}
-                        titulo="Maria"
-                    />
-                    <Cards
-                        src={imagem1}
-                        titulo="Pedro"
-                    />
+                    {ArrayCard.map((item) => {
+                        return (
+                            <Cards
+                                src={item.url}
+                                titulo={item.tex}
+                            />
+                        )
+                    })}
                 </div>
             </S.ContainerCards>
             <S.ContainerTornarVegano>
@@ -42,7 +35,7 @@ function Home() {
                 </div>
             </S.ContainerTornarVegano>
 
-            
+
         </>
 
     )
