@@ -2,16 +2,7 @@ import { useNavigate } from "react-router-dom"
 import Header from "../Header/header"
 import * as S from "./style"
 import Footer from "../Main/Footer/Footer"
-import imgaltaproteina from "../../../assets/imagem/img-categorias/AltaProteina.jpg"
-import imgbaixoteor from "../../../assets/imagem/img-categorias/baixo-teor-de-sodio.jpg"
-import imgnaocluten from "../../../assets/imagem/img-categorias/nao-contem-cluten.jpg"
-import imgcarne from "../../../assets/imagem/img-categorias/carne-fruto-do-mar.jpg"
-import imgqueijo from "../../../assets/imagem/img-categorias/queijo.jpg"
-import imgchocolate from "../../../assets/imagem/img-categorias/chocolate.png"
-import imglanche from "../../../assets/imagem/img-categorias/lanche.jpg"
-import imganimal from "../../../assets/imagem/img-categorias/p-animal.jpg"
-import imgpanificacao from "../../../assets/imagem/img-categorias/p-panificacao.jpg"
-import imgfundamentos from "../../../assets/imagem/img-categorias/dispensa.jpg"
+import { ImgCategorias } from "../../../assets/imagem/img-categorias/Img-categoria"
 
 function Categorias() {
 
@@ -51,61 +42,61 @@ function Categorias() {
                                 <ul>
                                     <li>
                                         <a href="">
-                                            <img src={imgbaixoteor} alt="" />
+                                            <img src={ImgCategorias.imgbaixoteor} alt="" />
                                             <span>Escolhas com baixo teor de sódio</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a onClick={EntraAltaProteina}>
-                                            <img src={imgaltaproteina} alt="" />
+                                            <img src={ImgCategorias.imgaltaproteina} alt="" />
                                             <span>Alta proteína</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgnaocluten} alt="" />
+                                            <img src={ImgCategorias.imgnaocluten} alt="" />
                                             <span>Não contém gluten</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgcarne} alt="" />
+                                            <img src={ImgCategorias.imgcarne} alt="" />
                                             <span>Carne e Frutos do Mar</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgqueijo} alt="" />
+                                            <img src={ImgCategorias.imgqueijo} alt="" />
                                             <span>Queijo, Ovos e Laticínios</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgchocolate} alt="" />
+                                            <img src={ImgCategorias.imgchocolate} alt="" />
                                             <span>Chocolate, Doces e Doces</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imglanche} alt="" />
+                                            <img src={ImgCategorias.imglanche} alt="" />
                                             <span>Lanches</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imganimal} alt="" />
+                                            <img src={ImgCategorias.imganimal} alt="" />
                                             <span>Produtos para animais de companhia</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgpanificacao} alt="" />
+                                            <img src={ImgCategorias.imgpanificacao} alt="" />
                                             <span>Produtos de panificação</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <img src={imgfundamentos} alt="" />
+                                            <img src={ImgCategorias.imgfundamentos} alt="" />
                                             <span>Fundamentos da despensa</span>
                                         </a>
                                     </li>
