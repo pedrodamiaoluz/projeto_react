@@ -6,13 +6,14 @@ import bainner from "../../../assets/imagem/img-lanche/bainner-lanche.png"
 import Cards from "../Main/Cards/Cards"
 import { SlArrowRight } from "react-icons/sl";
 import { useNavigate } from "react-router-dom"
+import { ArrayCard } from "../../../assets/imagem/img-lanche/arry-img"
 
 
 function Lanche() {
 
    const navigate = useNavigate()
 
-   function Voltar(){
+   function Voltar() {
       navigate("/categoria");
    }
    return (
@@ -100,10 +101,14 @@ function Lanche() {
                      </div>
                      <Ss.CardInputs>
                         <div className="container_lanche-card__altaproteina">
-                           <Cards />
-                           <Cards />
-                           <Cards />
-                           <Cards />
+                           {ArrayCard.map((item) => {
+                              return (
+                                 <Cards
+                                    img={item.url}
+                                    titulo={item.tex}
+                                 />
+                              )
+                           })}
 
                         </div>
                      </Ss.CardInputs>
