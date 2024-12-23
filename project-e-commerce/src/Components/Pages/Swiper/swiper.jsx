@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -20,7 +20,11 @@ export default () => {
          </div>
          <Swiper className="Swiper"
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            autoplay={{
+               delay: 3000,
+               disableOnInteraction: false,
+            }}
             spaceBetween={50}
             slidesPerView={5}
             navigation

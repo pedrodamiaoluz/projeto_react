@@ -4,7 +4,6 @@ export const ContainerSwiper = styled.div`
   .Swiper{
     margin: 0 1rem;
     padding: 2rem 0;
-    
   }
 
   .titulo-swiper{
