@@ -26,7 +26,7 @@ export default () => {
                disableOnInteraction: false,
             }}
             spaceBetween={50}
-            slidesPerView={5}
+            slidesPerView={7}
             navigation
             pagination={{ clickable: true }}
             //   scrollbar={{ draggable: true }}
