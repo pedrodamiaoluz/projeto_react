@@ -6,6 +6,8 @@
   --cor3: #4B6B40;
   --cor4: #354132;
   --cor5: #2E332C;
+  --swiper-pagination-color: var(--cor0);
+  --swiper-theme-color: red;
 }
 
 #root {
@@ -18,4 +20,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
+ 
 }
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: var(--cor0);
+}
+
+

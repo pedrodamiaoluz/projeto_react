@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Titulo = styled.h1`
    .titulo{
-      color: #000;
+      color: #354132;
       font-size: 1.8rem;
       font-weight: 700;
       margin: 2rem 1rem;
@@ -12,28 +12,37 @@ export const Titulo = styled.h1`
 export const Card = styled.div`
     background-color: transparent;
     width: 200px;
-    margin: 2rem 1rem;
+    margin: 0.8rem 1rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 200px;
+      height: 190px;
+      object-fit: cover;
+    }
 `;
 
-export const CardTitle = styled.div`
+export const CardTitles = styled.div`
    text-align: center;
    padding: 0.5rem 0;
 `
 
-export const CardInput = styled.div`
+export const CardInputs = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 30px;
 `
 
-export const CardButton = styled.div`
-  .button {
+export const Buttons = styled.div`
+  .buttons {
     all: unset;
     display: flex;
     align-items: center;
@@ -50,19 +59,21 @@ export const CardButton = styled.div`
     transition: border 300ms, color 300ms;
     user-select: none;
   }
-  .button p {
+  .buttons p {
     z-index: 1;
+    font-size: 0.7em;
+    
   }
 
-  .button:hover {
+  .buttons:hover {
     color: #212121;
   }
 
-  .button:active {
+  .buttons:active {
     border-color: teal;
   }
 
-  .button::after, .button::before {
+  .buttons::after, .buttons::before {
     content: "";
     position: absolute;
     width: 9em;
@@ -73,33 +84,65 @@ export const CardButton = styled.div`
     transition: transform 500ms, background 300ms;
   }
 
-  .button::before {
+  .buttons::before {
     left: 0;
     transform: translateX(-8em);
   }
 
-  .button::after {
+  .buttons::after {
     right: 0;
     transform: translateX(8em);
   }
 
-  .button:hover:before {
+  .buttons:hover:before {
     transform: translateX(-1em);
   }
 
-  .button:hover:after {
+  .buttons:hover:after {
     transform: translateX(1em);
   }
 
-  .button:active:before,
-  .button:active:after {
+  .buttons:active:before,
+  .buttons:active:after {
     background: teal;
   }
   `;
 
-  export const ContainerCards = styled.div`
+export const ContainerCards = styled.div`
    .card {
     display: flex;
     flex-wrap: wrap;
    }
   `
+
+export const ContainerTornarVegano = styled.div`
+  .tornar__vegano_container{
+    background-color: #fff;
+    width: 950px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img{
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+.tornar__veg-conteudo{
+  width: 500px;
+}
+
+.tornar__veg-conteudo h1{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #354132;
+}
+
+.tornar__veg-conteudo p{
+    padding: 1rem 0;
+    text-align: justify;
+}
+`

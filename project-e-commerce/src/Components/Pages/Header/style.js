@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Select = styled.select`
+   background-color: transparent;
+   border: none;
+   color: black;
+    font-size: 1rem;
+    font-weight: bold;
+   
+`
+
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -68,6 +78,25 @@ export const Container_Icons = styled.div`
    a{
       text-decoration: none;
       color: #000;
+      cursor: pointer;
    }
 `
 
+export const Navagate = styled.div`
+ul{
+   display: inline-block;
+   list-style-type: none;
+}
+
+li{
+   display: inline-block;
+    padding: 0.5rem;
+}
+
+a{
+   text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+`

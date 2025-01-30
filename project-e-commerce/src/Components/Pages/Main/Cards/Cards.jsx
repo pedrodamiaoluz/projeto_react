@@ -1,15 +1,10 @@
 import React from "react";
-import {
-    CardImg,
-    CardBody,
-    Button
-} from "shards-react";
-import * as S from "../AlimentosIntegrais/style";
-import Image1 from "../../../assets/react.svg";
+import * as S from "../Home/style";
 import { useState } from 'react';
+import { FaCartPlus } from "react-icons/fa";
 
 
-export default function Cards(props) {
+function Cards(props) {
 
     const [quantidade, setQuantidade] = useState();
 
@@ -19,14 +14,11 @@ export default function Cards(props) {
 
     return (
         <>
-            {/* <S.Titulo>
-                <h1 className="titulo">Alimentos Integrais</h1>
-            </S.Titulo> */}
             <S.Card>
                 <img src={props.src} />
-                <CardBody>
-                    <S.CardTitle>{props.titulo}</S.CardTitle>
-                    <S.CardInput>
+        
+                    <S.CardTitles>{props.titulo}</S.CardTitles>
+                    <S.CardInputs>
                         <p>R$0,00</p>
                         <input
                             type="number"
@@ -40,14 +32,15 @@ export default function Cards(props) {
                             placeholder="0"
                             required
                         />
-                    </S.CardInput>
-                    <S.CardButton>
-                        <Button className="button">
-                            <p>Carrinho</p>
-                        </Button>
-                    </S.CardButton>
-                </CardBody>
+                    </S.CardInputs>
+                    <S.Buttons>
+                        <button className="buttons">
+                            <p>Adicionar <FaCartPlus /></p>
+                        </button>
+                    </S.Buttons>
             </S.Card>
         </>
     )
 }
+
+export default Cards
