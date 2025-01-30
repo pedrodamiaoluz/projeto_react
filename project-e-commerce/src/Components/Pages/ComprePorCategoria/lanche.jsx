@@ -103,13 +103,14 @@ function Lanche() {
                         <div className="container_lanche-card__altaproteina">
                            {ArrayCard.map((item) => {
                               return (
-                                 <Cards
+                                 <>
+                                  <Cards
                                     img={item.url}
                                     titulo={item.tex}
                                  />
+                                 </>                        
                               )
                            })}
-
                         </div>
                      </Ss.CardInputs>
                   </div>
