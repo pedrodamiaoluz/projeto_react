@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const ContainerSwiper = styled.div`
   .Swiper{
     margin: 0 1rem;

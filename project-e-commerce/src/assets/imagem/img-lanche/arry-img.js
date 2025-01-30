@@ -24,5 +24,10 @@ export const ArrayCard = [
         id: 4,
         url: suco,
         tex: "Soco Integral"
+    },
+    {
+        id: 5,
+        url: suco,
+        tex: "Soco Integral"
     }
 ]
